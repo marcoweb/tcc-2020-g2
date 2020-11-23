@@ -1,0 +1,8 @@
+<form action="/user/update" method="post">
+    <input type="hidden" name="id" value=<?= $user['id'] ?> />
+    <label for="password">Senha</label>
+    <input type="password" name="password" />
+    <label for="confirm_password">Confirmação da Senha</label>
+    <input type="password" name="confirm_password" />
+    <input type="submit" value="Alterar Senha" />
+</form>

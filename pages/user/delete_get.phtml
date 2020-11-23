@@ -1,0 +1,6 @@
+<p>Tem certeza que deseja excluir o usuário "<?= $user['email'] ?>"?</p>
+
+<form action="/user/delete" method="post">
+    <input type="hidden" name="id" value=<?= $user['id'] ?> />
+    <input type="submit" value="Exluir" />
+</form>

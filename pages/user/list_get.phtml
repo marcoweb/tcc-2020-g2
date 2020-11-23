@@ -1,0 +1,21 @@
+<h1>Usuários</h1>
+<a href="/user/create">Novo Usuário</a>
+<table>
+    <thead>
+        <tr>
+            <th>EMail</th>
+            <th>&nbsp</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach($users as $u): ?>
+        <tr>
+            <td><?= $u['email'] ?></td>
+            <td>
+                <a href="/user/update/<?= $u['id'] ?>">Editar</a>
+                <a href="/user/delete/<?= $u['id'] ?>">Remover</a>
+            </td>
+        </tr>
+        <?php endforeach; ?>
+    </tbody>
+</table>

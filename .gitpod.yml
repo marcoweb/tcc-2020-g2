@@ -1,0 +1,4 @@
+image: gitpod/workspace-mysql
+
+tasks:
+    - init: mysql -u root -e "CREATE DATABASE applicationdb"; mysql -u root applicationdb < ./assets/sql/schema.mysql.sql; mysql -u root applicationdb < ./assets/sql/initdb.mysql.sql
